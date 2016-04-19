@@ -13,3 +13,9 @@ The pieces are:
 - A `Predictor` takes a state (made of `Dual`s) and a time delta, and produces a new state for t + dt, using arbitrary math.
 - A `KalmanFilter` takes a `Predictor` and a list of `Sensors`, and constructs an EKF model for the system they describe.
 - In an update loop, the `KalmanFilter` is fed `Measurement`s (i.e. a sensor object and its reading) and `dt`, and updates itself to the new optimal estimate of state.
+
+Dependencies
+------------
+
+- [Boost](http://www.boost.org/)
+- [Geomc](https://github.com/trbabb/geomc)
